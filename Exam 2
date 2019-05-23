@@ -1,0 +1,73 @@
+//Write a program that can be used to assign seats for a commercial airplane. The airplane has 13 rows, with
+//six seats in each row. Rows 1 and 2 are first class, rows 3 through 7 are business class, and rows 8 through
+//13 are economy class. Your program must prompt the user to enter the following information:
+
+//13 rows & 6 columns 
+
+#include <iostream> 
+#include <cstring>
+#include <conio.h>
+
+using namespace std; 
+
+int main()
+{
+	int row, col;
+	
+	cout << "\t\t\tWelcome to Tigeress Airline\n" << endl;
+	
+	 cout << "Rows 1 & 2 are First Class" << endl; 
+	 cout << "Rows 3 to 7 are Business Class" << endl;
+	 cout << "Rows 8 to 13 are Economy Class\n" << endl;
+	 
+	 cout << "Available Seats Indicate.......*" << endl;
+	 cout << "Occupied Seats Indicate........X\n" << endl;
+	
+{
+	int rows = 14;
+	int col = 7;
+	
+	char seat[rows][col];
+	int x,y;
+     
+     seat[0][0] = ' ';
+     seat[0][1] = 'A';
+     seat[0][2] = 'B'; 
+     seat[0][3] = 'C';
+     seat[0][4] = 'D';
+     seat[0][5] = 'E';
+     seat[0][6] = 'F';
+     seat[1][0] = 'Row 1';
+     seat[2][0] = 'Row 2';
+     seat[3][0] = 'Row 3';
+     seat[4][0] = 'Row 4';
+     seat[5][0] = 'Row 5';
+     seat[6][0] = 'Row 6';
+     seat[7][0] = 'Row 7';
+     seat[8][0] = 'Row 8';
+     seat[9][0] = 'Row 9';
+     seat[10][0] = 'Row 10';
+     seat[11][0] = 'Row 11';
+     seat[12][0] = 'Row 12';
+     seat[13][0] = 'Row 13';
+     
+     for (x = 1; x < rows ; x++)
+     {
+         for ( y = 1 ; y < col ; y++)
+         {
+		 	      cout << 
+			       seat[x][y] = '*';
+		 }
+         
+     }
+   
+}
+	cout << "Please Enter Row of Choosing: ";
+	cin >> row;
+	
+	cout << "Please Enter Row of Choosing: ";
+	cin >> row;
+	
+_getch();
+return 0;
+}
